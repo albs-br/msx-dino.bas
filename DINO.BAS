@@ -1,8 +1,8 @@
 1 '---------------------------------------------------------------------------|
 10 DEFINTA-Z:COLOR15,1,4:SCREEN1,2,0:FORI=0TO63:READA:VPOKE14336+I,A:NEXT 		 'Initialization
 20 KEYOFF:ONSPRITEGOSUB60:SPRITEON:Y=128:J=0:M=-1:N=0:S=0:V=2					 'Initialization (cont.)
-30 IFY=80THENJ=2ELSEIFY=128THENJ=0:IFSTRIG(0)=-1THENJ=-2 						 'Jump
-40 IFM<0THENM=255:N=(INT(RND(1)*7)*8)+80:BEEP									 'Enemy respawn
+30 IFY<=80THENJ=3ELSEIFY=128THENJ=0:IFSTRIG(0)=-1THENJ=-3 						 'Jump
+40 IFM<0THENM=255:N=(INT(RND(1)*3)*16)+96:BEEP									 'Enemy respawn
 50 PUTSPRITE0,(32,Y),15,0:Y=Y+J:PUTSPRITE1,(M,N),15,1:S=S+1:M=M-V:GOTO30 		 'Gameplay   ':LOCATE22,1:?S:S=S+1
 60 LOCATE22,1:?S:LOCATE9,11:?"New game? Y/N":IFINKEY$=CHR$(28)THENRETURNELSE60 	 'Collision
 70 DATA24,60,126,255,36,36,66,129,255,60,126,255,36,36,66,129
@@ -12,7 +12,7 @@
 
 1000 ' ------- Variables:
 1010 ' Y	Player Y
-1020 ' J	Player jump (0;-2;2)
+1020 ' J	Player jump (0;-3;3)
 1030 ' M,N	Enemy X,Y
 1040 ' S	SCORE
 1050 ' V	Game velocity (2-6)
