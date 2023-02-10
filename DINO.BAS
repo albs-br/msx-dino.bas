@@ -10,6 +10,9 @@
 8RETURN0:DATAC0,E0,FF,F8,FE,0,0,0,0,0,20,20,31,3F,1F,F,7,7,6,4,6,1E,2F,3F,38
 9DATA3F,78,F8,FE,F8,F0,F0,E0,C0,80,80,C0,18,1B,DB,DB,DB,DE,7C,38,18,18,18,18
 
+90 LOCATE10,1:?"HI "+STR$(s):LOCATE20,1:?s : RETURN
+100 LOCATE10,1:PRINTUSING"HI ##### #####";h;s:RETURN
+
 100 '-------------------------------------------------------------------------|    <--- 80 chars wide ruler
 
 1000 ' ------- Variables:
