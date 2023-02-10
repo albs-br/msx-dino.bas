@@ -1,5 +1,5 @@
 
-0DEFINTb-z:KEYOFF:SCREEN1,2,0:y=128:ONSPRITEGOSUB7:SPRITEON:m=-1				'Initialization
+0DEFINTb-z:KEYOFF:SCREEN1,2,0:y=128:m=-1:s=0:ONSPRITEGOSUB7:SPRITEON			'Initialization
 1FORi=0TO68:VPOKE6688+(iAND31),0:READa$:VPOKE14343+i,VAL("&H"+a$):NEXT			'Initialization (cont.)
 2f(0)=1:f(1)=4:f(2)=16:f(3)=64:DATA4,6,7,23,73,FF,7,3,1,0,0,0,0,0,0,0,0,0,0,80	'Initialization (cont.)
 3VPOKE6,f(sAND3):IFy<81THENj=3ELSEIFy=128THENj=STRIG(0)*3 						'Floor animation/Jump
