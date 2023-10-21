@@ -2,7 +2,9 @@
 
 https://github.com/albs-br/msx-dino.bas
 
-Attempt to recreate the famous Chrome browser Dino game on a 10-liner MSX-Basic program
+Attempt to recreate the famous Chrome browser Dino game on a 10-liner MSX-Basic program.
+
+My entry to the cool BASIC 10-Liner Contest 2023 (entries [here](https://gkanold.wixsite.com/homeputerium/games-list-2023), results [here](https://gkanold.wixsite.com/homeputerium/results-2023)).
 
 It can be run on any MSX machine (all generations) or MSX emulator by loading the file "DiskImage.dsk".
 
